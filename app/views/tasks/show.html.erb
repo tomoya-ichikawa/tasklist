@@ -26,6 +26,6 @@
 <%= link_to 'タスクの編集', edit_task_path(@task.id), class: 'btn btn-light' %>
 
 
-    <%= link_to 'このタスクを削除する', task_path(@task.id), method: :delete,data: {confirm: '本当に削除してよろしいですか'}, class: 'btn btn-danger' %>
+    <%= link_to 'このタスクを削除する', @task, method: :delete,data: {confirm: '本当に削除してよろしいですか'}, class: 'btn btn-danger' %>
 
 
